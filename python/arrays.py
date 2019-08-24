@@ -30,7 +30,7 @@ colors = dict([('kevin', 'blue'), ('bob', 'green'), ('kayla', 'red')])
 ### Lists ###
 #############
 
-# A list is created in Python by using the square brackets ([, and ]) and separating the values by commas:
+# A list is created in Python by using the square brackets [ and ] and separating the values by commas:
 my_list = [1, 2, 3, 4, 5]
 
 # To access the list value, call it's index as follows:
