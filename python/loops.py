@@ -23,3 +23,12 @@ for name, age in ages.items():
     print(f"Person Named: {name}")
     print(f"Age of: {age}")
 
+##################
+### While Loop ###
+##################
+
+a, b = 0, 1
+while a < 10:
+    print(a)
+    a, b = b, a+b
+
