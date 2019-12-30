@@ -3,7 +3,6 @@
 
 function highAndLow($numbers)
 {
-//   return "";
   $new = explode(' ', $numbers);
   $high = $new[0];
   $low = $new[0];
@@ -15,7 +14,7 @@ function highAndLow($numbers)
         $low = $value;
     }
   }
-  echo "$high $low";
+  return "$high $low";
 }
 
 highAndLow("1 2 3 4 5");  // return "5 1"
