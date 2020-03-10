@@ -1,14 +1,15 @@
 # https://www.codewars.com/kata/529bf0e9bdf7657179000008/train/python
 def valid_solution(board):
     ans = True
-    length = range(len(board))
     arr = []
+    some = range(0,9)
     for line in board:
         for num in line:
-            for item in length:
-                if num not in arr:
+            for item in range(len(board)):
+                if num != board[item]:
                     arr.append(num)
-                elif num not in board[item][item]:
+                elif num != board[item][item]:
+                    print(board[item][item])
                     arr.append(num)
                 else:
                     ans = False
@@ -17,8 +18,18 @@ def valid_solution(board):
 
 
 
+'''
+compare each item in the line if it's in there
+
+if not: compare it against the item in it's column
 
 
+
+
+
+
+
+'''
 
 
 
