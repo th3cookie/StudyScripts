@@ -2,27 +2,18 @@
 def valid_solution(board):
     ans = True
     length = range(len(board))
-    print(length)
     arr = []
     for line in board:
         for num in line:
             for item in length:
                 if num not in arr:
                     arr.append(num)
-                elif num not in board[length]
-
-            else:
-                ans = False
-                break
-        
-
-        #     else:
-        #         for num in length:
-        #             if num in board[num]:
-        #                 ans = False
-        
-
-
+                elif num not in board[item][item]:
+                    arr.append(num)
+                else:
+                    ans = False
+                    break
+    print(ans)
 
 
 
